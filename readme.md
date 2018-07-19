@@ -1,4 +1,4 @@
-# Installer Django
+# Installer Bottle
 
 
 
