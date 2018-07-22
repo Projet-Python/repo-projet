@@ -25,8 +25,8 @@ def result():
          city_weather = {
             'city' : city,
             'Minimal temperature': r['main']['temp_min'],
-            'Maximal temperature': r['main']['temp_max']
-         }
+            'Maximal temperature': r['main']['temp_max'],
+            }
          context = {'city_weather' : city_weather}
          return (context)
 	
