@@ -14,7 +14,7 @@ Notre solution propose les services suivants:
 
 Il est nécessaire d'avoir installé l'environnement sur Machine.
 
-Pour avoir Python sous Windows ,vous pouvez récupérer une version de python téléchargable sur le site de [Python](https://www.python.org/getit/] (nous avons pris python-2.7.12.amd64.msi) et puis lancer l'executable.
+Pour avoir Python sous Windows ,vous pouvez récupérer une version de python téléchargable sur le site de [Python](https://www.python.org/getit/) (nous avons pris python-2.7.12.amd64.msi) et puis lancer l'executable.
 
 - Dans vos variables d'environnement , rajouter le chemin 'C:\Python27' à la variable système PATH et puis rédémarrer votre pc.
 
