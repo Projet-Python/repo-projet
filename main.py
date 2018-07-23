@@ -1,14 +1,12 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
-from bottle import Bottle, run, view, route, request,get,static_file#,requestapp =  Bottle()
+from bottle import Bottle, run, view, route, request,get,static_file
 app =  Bottle()
 import requests
 @app.route('/search')
 def search():
-	contain = {'title': "Saisir la ville pour obtenir ses prévision méteo :"}
+	contain = {'title': "Saisir la ville pour obtenir ses prï¿½vision mï¿½teo :"}
 	return '''
-		Saisir la ville pour obtenir ses prévision méteo :
+		Saisir la ville pour obtenir ses prï¿½vision mï¿½teo :
                 <form action="/result" method="post">
                         Ville: <input name="city" type="text" />
                         <input value="Rechercher" type="submit" />
@@ -20,7 +18,7 @@ def search():
 def result():
 #        context = {'title': "Prevision de la semaine. Ville :"}
          city = request.forms.city
-         url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=7582d9d4adc74a3c33d94751f5ff5d84&units=metric"  
+         url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=7582d9d4adc74a3c33d94751f5ff5d84&units=metric"
          r = requests.get(url.format(city)).json()
          city_weather = {
             'city' : city,
@@ -29,7 +27,5 @@ def result():
             }
          context = {'city_weather' : city_weather}
          return (context)
-	
-run(app, host='localhost', port=5000, reloader=True)
-                                                            
 
+run(app, host='localhost', port=5000, reloader=True)
